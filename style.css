@@ -1,0 +1,261 @@
+body {
+  background: linear-gradient(to right, #9594e1, rgb(100 232 137));
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+/* .hero-text {
+  margin-bottom: -48px;
+  font-size: 78px;
+  
+} */
+
+.hero-text {
+  color: rgb(38, 7, 54);
+  position: relative;
+  font-size: 186px;
+  text-align: center;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 102px;
+  font-size: 60px;
+  color: black;
+}
+
+#contact {
+  display: flex;
+  font-size: 60px;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+/* #allProjects {
+  flex-direction: row-reverse;
+} */
+
+.intro {
+  font-size: 28px;
+  text-align: end;
+  color: #383432;
+}
+
+.welcome-text {
+  position: relative;
+  font-size: 84px;
+  line-height: 1.5;
+  text-align: center;
+  overflow: hidden;
+}
+
+.welcome-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #6fd974);
+  animation: typing 5s steps(40) infinite, blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000;
+  }
+}
+
+img {
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+}
+#facts {
+  display: flex;
+  flex-direction: row;
+  row-gap: 40px;
+  justify-content: space-between;
+}
+#factsNumber {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: -20px;
+  margin-left: 60px;
+}
+#factsText {
+  font-size: 55px;
+}
+#darkside {
+  background-color: #18b4b4;
+  height: 557px;
+  border-radius: 20px;
+}
+h2 {
+  color: #532121;
+  font-size: 60px;
+  padding-left: 122px;
+}
+
+#customerReview {
+  margin: 40px;
+  color: black;
+  padding-top: 40px;
+}
+
+#review {
+  font-family: Arial, sans-serif;
+  font-size: 58px;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden; /* Hide overflow to create typing effect */
+  white-space: nowrap; /* Prevent line breaks */
+  border-right: 2px solid black; /* Cursor effect */
+  animation: typing 2s steps(40) 1s forwards; /* Typing animation */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#languages {
+  column-gap: 97px;
+  justify-content: space-evenly;
+  display: flex;
+  font-size: 90px;
+  padding-right: 250px;
+  margin-bottom: 50px;
+}
+#languageOne {
+  color: orange;
+  font-size: 90px;
+}
+#languageTwo {
+  color: #6352d7;
+  font-size: 90px;
+}
+#languageThree {
+  color: yellow;
+  font-size: 90px;
+}
+#lastPics {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  width: 100%;
+}
+#groupPicsOne {
+  column-gap: 32px;
+  display: flex;
+  margin-top: 49px;
+}
+
+#groupPicsTwo {
+  column-gap: 32px;
+  display: flex;
+}
+#pinecone2pic {
+  display: flex;
+  height: 152em;
+  border-top-left-radius: 20px;
+}
+#pinecone3pic {
+  column-gap: 73px;
+  display: flex;
+  height: 137em;
+  margin-top: -858px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#footer {
+  font-size: 54px;
+}
+#footerBox {
+  height: 279px;
+  border-radius: 70px;
+  display: flex;
+  margin-top: -1031px;
+  align-items: stretch;
+  margin-right: -1277px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+/* svg > path {
+  fill: white;
+} */
+
+.box {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.form-box {
+  padding: 10px;
+  border-radius: 5px;
+  background: #ececec;
+  box-shadow: 10px 15px grey, -10px -10px 15px #fff;
+}
+.form-box input {
+  font-size: 88px;
+  color: #000;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background: #ececec;
+}
+.form-box button {
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4769d8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-box button:hover {
+  background: #2e54d3;
+}
+p {
+  font-size: 60px;
+  margin-top: 30px;
+}
